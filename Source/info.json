@@ -1,0 +1,10 @@
+{
+  "name": "leighzerscrapyards",
+  "version": "0.1.0",
+  "title": "Leighzer's Scrapyards",
+  "author": "Leighzer",
+  "contact": "Please message me on the factorio forums my username is leighzer.",  
+  "factorio_version": "0.18",
+  "dependencies": [ "base >= 0.18.36"],
+  "description": "Adds a scrap resource that can be recycled directly into basic components."
+}
