@@ -2,8 +2,8 @@ if not leighzermods then --generic mod variable to store information that may be
     leighzermods = {}        
 end
 
-if not leighzermods.scrapyards then
-    leighzermods.scrapyards = {}
+if not leighzermods.leighzerscrapyards then
+    leighzermods.leighzerscrapyards = {}
 end
 
 data:extend(
