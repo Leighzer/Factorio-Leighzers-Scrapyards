@@ -54,7 +54,8 @@ data:extend(
         --   scale = 0.5
         -- }
       }
-    }
+    },
+    leighzermorphiteDisabled = true,
   },
   {--prototype for particles that fly out when you hand mine the ore in the ground    
   type = "optimized-particle",
