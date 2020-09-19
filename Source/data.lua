@@ -3,7 +3,11 @@ if not leighzermods then --generic mod variable to store information that may be
 end
 
 if not leighzermods.leighzerscrapyards then
-    leighzermods.leighzerscrapyards = {}
+    leighzermods.leighzerscrapyards = {}    
+end
+
+if not leighzermods.leighzerscrapyards.productivityEnabledRecipes then --list of recipe names that are going to get productivity modules enabled
+    leighzermods.leighzerscrapyards.productivityEnabledRecipes = {}
 end
 
 data:extend(
@@ -167,3 +171,13 @@ data:extend(
   },
 }) 
 
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-processing')
+for k, v in pairs(data.raw.module) do
+  if v.name:find("productivity%-module") and v.limitation then
+    for _, recipe in ipairs(leighzermods.leighzerscrapyards.productivityEnabledRecipes) do
+        if data.raw["recipe"][recipe] then
+          table.insert(v.limitation, recipe)
+        end
+    end
+  end
+end

@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+  Changes:
+    - Allow production modules to be used with scrap processing recipe.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
   Changes:
     - Disable morphite to scrap recipe from being generated.
