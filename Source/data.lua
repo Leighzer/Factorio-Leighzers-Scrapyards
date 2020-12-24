@@ -1,3 +1,5 @@
+local resource_autoplace = require("resource-autoplace")
+
 if not leighzermods then --generic mod variable to store information that may be needed later
     leighzermods = {}        
 end
@@ -59,7 +61,9 @@ data:extend(
         -- }
       }
     },
-    leighzermorphiteDisabled = true,
+    leighzermorphite = {
+      disabled = true,
+    }
   },
   {--prototype for particles that fly out when you hand mine the ore in the ground    
   type = "optimized-particle",
@@ -169,15 +173,6 @@ data:extend(
     subgroup = "raw-material",
     order = "c[scrap-ore]"
   },
-}) 
+})
 
 table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-processing')
-for k, v in pairs(data.raw.module) do
-  if v.name:find("productivity%-module") and v.limitation then
-    for _, recipe in ipairs(leighzermods.leighzerscrapyards.productivityEnabledRecipes) do
-        if data.raw["recipe"][recipe] then
-          table.insert(v.limitation, recipe)
-        end
-    end
-  end
-end

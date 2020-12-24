@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+  Changes:
+    - Version bump to 1.1.
+    - Update compatibility info for Leighzer's Morphite.
+    - Move productivity enable on recipes into data-updates stage.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.5
   Changes:
     - Allow production modules to be used with scrap processing recipe.
