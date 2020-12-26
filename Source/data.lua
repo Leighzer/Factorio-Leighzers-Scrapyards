@@ -36,7 +36,8 @@ data:extend(
       base_density = 10,
       has_starting_area_placement = true,    
       regular_rq_factor_multiplier = 1.10,
-      starting_rq_factor_multiplier = 1.5
+      starting_rq_factor_multiplier = 1.5,
+      candidate_spot_count = 22 / 3
     },
     
     stage_counts = {15000, 7500, 2500, 500, 100},
@@ -169,7 +170,7 @@ data:extend(
     ingredients = {{"scrap-ore", 10}},
     icon = "__leighzerscrapyards__/graphics/icons/scrap-ore.png",
     icon_size = 64,
-    results = {{"iron-plate",4},{"iron-gear-wheel",2},{"copper-plate",3},{"copper-cable",4},{"electronic-circuit",1}},
+    results = {{"iron-plate",4},{"iron-gear-wheel",2},{"copper-plate",3},{"copper-cable",3},{"electronic-circuit",1}},
     subgroup = "raw-material",
     order = "c[scrap-ore]"
   },

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+  Changes:
+    - Update resource autoplace settings. Should now be more rare to encounter scrap patches.
+    - Scrap processing to yield 3 copper cable instead of 4. Builds that consume results of scrap processing should be simpler to make. Also less cable to deal with in general, it was a bit heavy at 4.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
   Changes:
     - Version bump to 1.1.
