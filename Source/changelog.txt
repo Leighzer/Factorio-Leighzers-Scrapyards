@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+  Changes:
+    - Add iron plate and copper plate sink recipes.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
   Changes:
     - Update resource autoplace settings. Should now be more rare to encounter scrap patches.

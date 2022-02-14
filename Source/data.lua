@@ -174,6 +174,32 @@ data:extend(
     subgroup = "raw-material",
     order = "c[scrap-ore]"
   },
+  {
+    type = "recipe",
+    name = "iron-plate-reclamation",
+    energy_required = 5,
+    enabled = true,
+    category = "advanced-crafting",
+    ingredients = {{"iron-gear-wheel",2},{"copper-plate",3},{"copper-cable",3},{"electronic-circuit",1}},
+    results = {{"iron-plate",6}},
+    subgroup = "raw-material",
+    order = "d-a[iron-plate-reclamation]",
+    localised_name = "Iron plate reclamation"
+  },
+  {
+    type = "recipe",
+    name = "copper-plate-reclamation",
+    energy_required = 5,
+    enabled = true,
+    category = "advanced-crafting",
+    ingredients = {{"iron-plate",4},{"iron-gear-wheel",2},{"copper-cable",3},{"electronic-circuit",1}},
+    results = {{"copper-plate",4}},
+    subgroup = "raw-material",
+    order = "d-b[copper-plate-reclamation]",
+    localised_name = "Copper plate reclamation"
+  }
 })
 
 table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-processing')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'iron-plate-reclamation')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'copper-plate-reclamation')
