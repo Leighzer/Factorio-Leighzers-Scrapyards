@@ -176,30 +176,79 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "iron-plate-reclamation",
-    energy_required = 5,
+    name = "iron-gear-wheel-reclamation",
+    energy_required = 2,
     enabled = true,
     category = "advanced-crafting",
-    ingredients = {{"iron-gear-wheel",2},{"copper-plate",3},{"copper-cable",3},{"electronic-circuit",1}},
-    results = {{"iron-plate",6}},
+    ingredients = {{"iron-gear-wheel",2}},
+    icons = {{icon="__leighzerscrapyards__/graphics/icons/recycle.png",icon_size=64}, {icon="__base__/graphics/icons/iron-plate.png",icon_size=64}},
+    results = {{"iron-plate",1}},
     subgroup = "raw-material",
-    order = "d-a[iron-plate-reclamation]",
-    localised_name = "Iron plate reclamation"
+    order = "d-a-a[gear-wheel-reclamation]",
+    main_product = "",
+    localised_name = "Gear wheel reclamation"
   },
   {
     type = "recipe",
-    name = "copper-plate-reclamation",
-    energy_required = 5,
+    name = "electronic-circuit-reclamation",
+    energy_required = 8,
     enabled = true,
     category = "advanced-crafting",
-    ingredients = {{"iron-plate",4},{"iron-gear-wheel",2},{"copper-cable",3},{"electronic-circuit",1}},
-    results = {{"copper-plate",4}},
+    ingredients = {{"electronic-circuit",8}},
+    icons = {{icon="__leighzerscrapyards__/graphics/icons/recycle.png",icon_size=64}, {icon="__base__/graphics/icons/iron-plate.png",icon_size=64}, {icon="__base__/graphics/icons/copper-cable.png",icon_size=64,scale=0.35}},
+    results = {{"iron-plate",2}, {"copper-cable",3}},
     subgroup = "raw-material",
-    order = "d-b[copper-plate-reclamation]",
-    localised_name = "Copper plate reclamation"
-  }
+    order = "d-a-c[electronic-circuit-reclamation]",
+    main_product = "",
+    localised_name = "Electronic circuit reclamation"
+  },
+  {
+    type = "recipe",
+    name = "copper-cable-reclamation",
+    energy_required = 8,
+    enabled = true,
+    category = "advanced-crafting",
+    ingredients = {{"copper-cable",8}},
+    icons = {{icon="__leighzerscrapyards__/graphics/icons/recycle.png",icon_size=64}, {icon="__base__/graphics/icons/copper-plate.png",icon_size=64}},
+    results = {{"copper-plate",1}},
+    subgroup = "raw-material",
+    order = "d-a-b[copper-cable-reclamation]",
+    main_product = "",
+    localised_name = "Copper cable reclamation"
+  },
+  {
+    type = "recipe",
+    name = "scrap-iron-plate",
+    energy_required = 10,
+    enabled = true,
+    category = "advanced-crafting",
+    ingredients = {{"iron-plate", 36}},
+    icons = {{icon="__leighzerscrapyards__/graphics/icons/recycle.png",icon_size=64}, {icon="__leighzerscrapyards__/graphics/icons/scrap-ore.png",icon_size=64,scale=0.35}},
+    results = {{"scrap-ore",5}},
+    subgroup = "raw-material",
+    order = "d-b-a[scrap-iron-plate]",
+    main_product = "",
+    localised_name = "Scrap iron plate"
+  },
+  {
+    type = "recipe",
+    name = "scrap-copper-plate",
+    energy_required = 10,
+    enabled = true,
+    category = "advanced-crafting",
+    ingredients = {{"copper-plate", 24}},
+    icons = {{icon="__leighzerscrapyards__/graphics/icons/recycle.png",icon_size=64}, {icon="__leighzerscrapyards__/graphics/icons/scrap-ore.png",icon_size=64, scale=0.35}},
+    results = {{"scrap-ore",5}},
+    subgroup = "raw-material",
+    order = "d-b-b[scrap-iron-plate-copper-plate]",
+    main_product = "",
+    localised_name = "Scrap copper plate"
+  },
 })
 
 table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-processing')
-table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'iron-plate-reclamation')
-table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'copper-plate-reclamation')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'iron-gear-wheel-reclamation')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'electronic-circuit-reclamation')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'copper-cable-reclamation')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-iron-plate')
+table.insert(leighzermods.leighzerscrapyards.productivityEnabledRecipes, 'scrap-copper-plate')
