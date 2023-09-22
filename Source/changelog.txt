@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+  Changes:
+    - Ensure recipe names are in localization file and not using localised_name on prototype data.
+---------------------------------------------------------------------------------------------------
 Version: 0.2.3
   Changes:
     - Rework recipes to form a recycle loop so the resource can be continously processed even if output lines for particular products are backed up.

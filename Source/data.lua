@@ -185,8 +185,7 @@ data:extend(
     results = {{"iron-plate",1}},
     subgroup = "raw-material",
     order = "d-a-a[gear-wheel-reclamation]",
-    main_product = "",
-    localised_name = "Gear wheel reclamation"
+    main_product = "",    
   },
   {
     type = "recipe",
@@ -200,7 +199,6 @@ data:extend(
     subgroup = "raw-material",
     order = "d-a-c[electronic-circuit-reclamation]",
     main_product = "",
-    localised_name = "Electronic circuit reclamation"
   },
   {
     type = "recipe",
@@ -214,7 +212,6 @@ data:extend(
     subgroup = "raw-material",
     order = "d-a-b[copper-cable-reclamation]",
     main_product = "",
-    localised_name = "Copper cable reclamation"
   },
   {
     type = "recipe",
@@ -228,7 +225,6 @@ data:extend(
     subgroup = "raw-material",
     order = "d-b-a[scrap-iron-plate]",
     main_product = "",
-    localised_name = "Scrap iron plate"
   },
   {
     type = "recipe",
@@ -241,8 +237,7 @@ data:extend(
     results = {{"scrap-ore",5}},
     subgroup = "raw-material",
     order = "d-b-b[scrap-iron-plate-copper-plate]",
-    main_product = "",
-    localised_name = "Scrap copper plate"
+    main_product = "",    
   },
 })
 
